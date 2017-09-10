@@ -1,6 +1,6 @@
-//= require vue/dist/vue
-//= require vue-router/dist/vue-router
-//= require fuse.js/dist/fuse
+//= require vue/dist/vue.min
+//= require vue-router/dist/vue-router.min
+//= require fuse.js/dist/fuse.min
 
 window.Fuse = Fuse;
 const router = new VueRouter({
@@ -59,19 +59,25 @@ function visitAnchor(anchor){
 
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
-     // create history item when actually clicking on a term
-      if (e.target.matches('h2 a')) {
-          e.preventDefault();
-          visitAnchor(e.target.getAttribute('href'))
+    href = e.target.getAttribute('href')
+
+    // create history item when actually clicking on a term
+    if (e.target.matches('h2 a')) {
+        e.preventDefault();
+        visitAnchor(href)
+    }
+    // create history item and stay on page if it's homepage
+    if (href == '/') {
+        e.preventDefault();
+        visitAnchor(href)
+    }
+    // allow crosslinking in vue
+    if (e.target.matches('#app ul li a')){
+      if(href.charAt(0) == '#'){ // if it's an anchor
+        e.preventDefault();
+        visitAnchor(href)
       }
-      // allow crosslinking in vue
-      if (e.target.matches('#app ul li a')){
-        var link = e.target.getAttribute('href')
-        if(link.charAt(0) == '#'){ // if it's an anchor
-          e.preventDefault();
-          visitAnchor(e.target.getAttribute('href'))
-        }
-      }
+    }
   });
 });
 
