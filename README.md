@@ -1,24 +1,32 @@
-# README
+# Deep Jargon
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## This is a simple app
 
-Things you may want to cover:
+Stupid simple Rails app in back. Stupid simple Vue.js app in the front. It takes markdown in the `app/views/definitions` directory, compiles it to json and dumps it in the html for vue to use.
 
-* Ruby version
+## Installation
 
-* System dependencies
+`brew install yarn`
 
-* Configuration
+## Running
 
-* Database creation
+Run `bundle exec rails s` in terminal.
 
-* Database initialization
+View http://localhost:3000 in the browser.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Want to add definitions or fix a typo?
 
-* Deployment instructions
+You'll want to:
 
-* ...
+1) Fork the Project
+2) Add or edit [the markdown files in the app/views/definition directory](https://github.com/sudara/deepjargon/tree/master/app/views/definitions).
+3) Create a Pull Request
+
+Markdown templates look like so:
+
+```
+## [Thing Being Defined](#thing-being-defined)
+
+Text definition. [External link](http://google.com) or link to [other definition](#other-definition).
+

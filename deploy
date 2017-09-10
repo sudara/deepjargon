@@ -35,4 +35,4 @@ ssh alonetone '
 # handle restarts
 echo "Run puma, run!"
 
-ssh linode "monit restart deepjargon"
+ssh linode "monit restart puma_deepjargon"
