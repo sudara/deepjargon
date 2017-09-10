@@ -1,4 +1,3 @@
-require 'kramdown'
 ActiveSupport.escape_html_entities_in_json = false
 class SiteController < ApplicationController
 
@@ -24,7 +23,7 @@ class SiteController < ApplicationController
   protected
 
   def convert_to_html(markdown)
-    Kramdown::Document.new(markdown, input: 'GFM').to_html
+    Kramdown::Document.new(markdown, input: 'GFM', math_engine: 'katex').to_html
   end
 
 end
