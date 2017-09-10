@@ -31,11 +31,12 @@ var app = new Vue({
   },
   watch: {
     search() {
-      this.$router.replace(this.search.trim())
-      if (this.search.trim() === '')
+      if (this.search.trim() === ''){
         this.result = this.list
-      else{
+        this.$router.replace('/')
+      }else{
         this.result = this.fuse.search(this.search.trim())
+        this.$router.replace(this.search.trim())
       }
     },
     '$route' (to, from) {

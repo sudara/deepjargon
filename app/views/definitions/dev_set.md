@@ -2,6 +2,6 @@
 
 Development Set.
 
-A percentage of your [Dataset](#dataset) that you use to build your models.
+A small percentage of your [Dataset](#dataset) that you use to explicitly develop, or build your model.
 
 Hold-out cross-validation. See [Test Set](#test-set)

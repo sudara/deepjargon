@@ -8,7 +8,7 @@ class SiteController < ApplicationController
 
     # Render each markdown file
     @definitions = []
-    definition_files.each do |file|
+    definition_files.sort.each do |file|
       @definitions << { title: file.split('/',-1).last.split('.').first.titleize,
         body: convert_to_html(File.open(file).read) }
     end
