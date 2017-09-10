@@ -1,8 +1,9 @@
 threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
 threads threads_count, threads_count
 
-environment ENV.fetch("RAILS_ENV") { "development" }
-if environment == "production"
+env = ENV.fetch("RAILS_ENV") { "development" }
+environment env
+if env == "production"
   workers 2
   daemonize true
   bind 'unix://tmp/jargon.sock'
