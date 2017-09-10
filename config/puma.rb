@@ -1,7 +1,7 @@
 threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
 threads threads_count, threads_count
 
-env = ENV.fetch("RAILS_ENV") { "development" }
+env = ENV.fetch("RAILS_ENV") { "production" }
 environment env
 if env == "production"
   workers 2
