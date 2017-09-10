@@ -5,7 +5,7 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 if environment == "production"
   workers 2
   daemonize true
-  bind 'unix://tmp/puma.sock'
+  bind 'unix://tmp/jargon.sock'
   state_path 'tmp/puma.state'
   stdout_redirect 'log/puma.log', 'log/puma.log', true
 else
