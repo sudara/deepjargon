@@ -1,12 +1,13 @@
 # Deep Jargon
 
-## This is a simple app
+## A Simple Little App
 
 Stupid simple Rails app in back. Stupid simple Vue.js app in the front. It takes markdown in the `app/views/definitions` directory, compiles it to json and dumps it in the html for vue to use.
 
 ## Installation
 
 `brew install yarn`
+`bundle install`
 
 ## Running
 
@@ -15,7 +16,7 @@ Run `bundle exec rails s` in terminal.
 View http://localhost:3000 in the browser.
 
 
-## Want to add definitions or fix a typo?
+## Adding or Editing Definitions
 
 You'll want to:
 
@@ -29,4 +30,4 @@ Markdown templates look like so:
 ## [Thing Being Defined](#thing-being-defined)
 
 Text definition. [External link](http://google.com) or link to [other definition](#other-definition).
-
+```
