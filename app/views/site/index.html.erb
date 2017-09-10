@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  window.definitions=<%= raw @definitions.to_json %>;
+</script>
+
+<div id="app">
+  <h1><a href='/'>Deep Jargon</a></h1>
+
+  <input type="text" v-model="search" id="search" placeholder="search" autofocus>
+  <ul>
+    <li v-for="definition in result">
+      <div v-html="definition.body"></div>
+    </li>
+  </ul>
+</div>
+

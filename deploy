@@ -1,0 +1,47 @@
+#!/bin/bash
+echo "Deployanatoring teh codez!"
+echo
+
+# handle git and bundle install
+ssh alonetone '
+  source /etc/profile;
+  source ~/.profile;
+  cd /data/deepjargon;
+
+  if [[ $(git diff) > "" ]];
+    then
+      echo "WARNING: local changes on server, exiting!";
+      exit 0;
+  fi;
+
+  git fetch;
+
+  if [[ $(git diff origin/master db) > "" ]]; then
+    RUN_MIGRATIONS=1;
+  fi
+
+  if [[ $(git diff origin/master Gemfile.lock) > "" ]];
+    then
+      echo "Gemfile changed, bundle installing...";
+      git reset --hard origin/master; bundle install --deployment;
+      echo
+    else
+      echo "skipping bundle install, gemfile has not changed since last time.";
+      git reset --hard origin/master;
+      echo
+  fi
+
+  if [[ $RUN_MIGRATIONS ]]; then
+    echo "Running migrations, hold tight...";
+    time RAILS_ENV=production bundle exec rake db:migrate;
+  fi
+
+   echo "Compiling assets..."
+   RAILS_ENV=production bundle exec rake assets:precompile
+
+  '
+
+# handle restarts
+echo "Run puma, run!"
+
+ssh linode "monit restart deepjargon"
