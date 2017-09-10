@@ -4,7 +4,7 @@
 
 window.Fuse = Fuse;
 const router = new VueRouter({
-  mode:'history'
+  mode: 'history'
 });
 
 var app = new Vue({
