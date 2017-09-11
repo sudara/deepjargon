@@ -10,6 +10,7 @@ Stupid simple Rails app in back. Stupid simple Vue.js app in the front. It takes
 brew install yarn
 gem install bundler
 bundle install
+yarn install
 ```
 
 ## Running
