@@ -23,7 +23,7 @@ class SiteController < ApplicationController
   protected
 
   def render_response_to_file
-    File.open(File.join(Rails.root,'public/index.html'), "wb+") { |f| f.write(response.body) }
+    File.open(File.join(Rails.root,'public/index.html'), "wb+") { |f| f.write(response.body) } unless Rails.env.development?
   end
 
   def convert_to_html(markdown)
