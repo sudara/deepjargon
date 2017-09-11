@@ -30,6 +30,9 @@ ssh alonetone '
    echo "Compiling assets..."
    RAILS_ENV=production bundle exec rake assets:precompile
 
+   echo "Remove index.html cache.."
+   rm -f public/index.html
+
   '
 
 # handle restarts
