@@ -1,3 +1,4 @@
+//= require_tree
 //= require vue/dist/vue.min
 //= require vue-router/dist/vue-router.min
 //= require fuse.js/dist/fuse.min
@@ -27,20 +28,28 @@ var app = new Vue({
 
     this.fuse = new window.Fuse(this.list, options)
     this.result = this.list
-    this.search = window.location.pathname.substr(1)
+    this.search = window.location.pathname.substr(1).replace('-',' ')
+    document.title = window.location.pathname.substr(1)
+    document.getElementById('remove_query').style.visibility = "hidden";
   },
   watch: {
     search() {
       if (this.search.trim() === ''){
         this.result = this.list
         this.$router.replace('/')
+        document.getElementById('remove_query').style.visibility = "hidden";
       }else{
-        this.result = this.fuse.search(this.search.trim())
-        this.$router.replace(this.search.trim())
+        var permalink = this.search.trim().replace(' ','-')
+        // send the dashed permalink term to the search
+        // gives us better results
+        this.result = this.fuse.search(permalink)
+        this.$router.replace(permalink)
+        document.getElementById('remove_query').style.visibility = "visible";
       }
     },
     '$route' (to, from) {
-      this.search = to.path.substr(1);
+      //this.search = to.path.substr(1);
+      console.log(to)
     }
   },
   data: {
@@ -54,13 +63,15 @@ var app = new Vue({
 
 function visitAnchor(anchor){
   var definition = anchor.substr(1);
-  app.search = definition;
+  //console.log(definition.replace('-',' '));
+  app.search = definition.replace('-',' ');
   app.$router.push(definition);
 }
 
+
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
-    href = e.target.getAttribute('href')
+    href = e.target.getAttribute('href') || '/'
 
     // create history item when actually clicking on a term
     if (e.target.matches('h2 a')) {

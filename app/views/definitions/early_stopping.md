@@ -1,8 +1,11 @@
 ## [Early Stopping](#early-stopping)
 
-Literally stopping [Gradient Descent] early.
+Literally stopping early.
 
-Yay for terms that do what they say on the box! Why stop early? To reduce [overfitting](#overfitting).
+Stopping what early? Training the model, such as with [gradient descent](#gradient-descent). Yay for terms that do what they say on the box!
+
+
+Why stop early? To reduce [overfitting](#overfitting).
 
 Early stopping is a form of [Regularization](#regularization).
 
