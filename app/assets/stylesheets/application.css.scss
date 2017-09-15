@@ -27,13 +27,19 @@ body{
     font-size:18px;
     height:35px;
   }
+  hr{
+    width:30%;
+    margin-left:0;
+    border:0;
+    background-color:black;
+    height:1px;
+  }
   ul{
     margin:0;
     padding:0;
     >li{
       list-style: none;
       a{
-        text-decoration:none;
       }
     }
   }
@@ -42,7 +48,8 @@ body{
   }
   span.katex{
     display: block;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
   h2{
     margin-top:2em;
