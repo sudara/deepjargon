@@ -29,15 +29,12 @@ body{
   ul{
     margin:0;
     padding:0;
-    li{
+    >li{
       list-style: none;
       a{
         text-decoration:none;
       }
     }
-  }
-  ol{
-
   }
   pre{
     overflow-x: scroll;
