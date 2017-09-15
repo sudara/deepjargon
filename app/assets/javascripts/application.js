@@ -31,6 +31,8 @@ var app = new Vue({
     this.search = window.location.pathname.substr(1).replace('-',' ')
     document.title = window.location.pathname.substr(1)
     document.getElementById('remove_query').style.visibility = "hidden";
+    this.search.trim() === ''
+      highlightTopResult()
   },
   watch: {
     search() {
@@ -66,6 +68,10 @@ function visitAnchor(anchor){
   //console.log(definition.replace('-',' '));
   app.search = definition.replace('-',' ');
   app.$router.push(definition);
+}
+
+function highlightTopResult(){
+
 }
 
 

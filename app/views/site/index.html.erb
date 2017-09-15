@@ -7,7 +7,7 @@
 
   <input type="text" v-model="search" id="search" placeholder="search" autofocus>
   <a href='/' id="remove_query"><i class="fa fa-times-octagon"></i></a>
-  <ul>
+  <ul class="definitions">
     <li v-for="definition in result">
       <div v-html="definition.body"></div>
     </li>

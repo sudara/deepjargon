@@ -2,6 +2,13 @@
 
 Artificial Intelligence.
 
-A marketing term similar to "cloud" or "web 2.0" that hypes and obfuscates rather than explains.
+A marketing term similar to "cloud" or "web 2.0"
 
-A functional synonym to [Weak AI](#weak-ai), as much as some cross their fingers that HAL 9000 will soon dethrone Siri.
+A synonym of [Weak AI](#weak-ai).
+
+"Whatever hasn't been done yet" in computing<sup>1</sup>.
+
+An umbrella term that encompasses the fields of [machine learning](#machine-learning)
+
+---
+1. See [AI effect](https://en.wikipedia.org/wiki/AI_effect#AI_is_whatever_hasn.27t_been_done_yet) on Wikipedia
