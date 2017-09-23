@@ -35,3 +35,14 @@ Markdown templates look like so:
 
 Text definition. [External link](http://google.com) or link to [other definition](#other-definition).
 ```
+
+## Style Guide
+
+1. Humor is welcome
+2. Concise and plain language is encouraged. Aim for one-liners.
+3. Multiple short "angles" or contexts is nice.
+4. Don't use part of the term in the definition (for example, don't use the word "cost" when defining "cost function")
+5. Code and math blocks are encouraged to supplement words
+6. Link to (instead of define) sub terms and related terms. For example, Regression should link to, but not explain Linear Regression.
+7. External links (wikipedia, coursera, etc) belong in the footnotes, not the definition body.
+
