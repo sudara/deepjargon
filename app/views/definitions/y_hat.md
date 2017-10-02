@@ -1,4 +1,4 @@
-##[y hat](#y-hat)
+## [y hat](#y-hat)
 
 `ŷ`
 

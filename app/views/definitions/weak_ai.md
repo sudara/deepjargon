@@ -6,4 +6,6 @@ The only kind of [AI](#ai) that exists. Also called "Narrow AI" or just AI.
 
 See [Strong AI](#strong-ai) if you like good bedtime stories.
 
-https://en.wikipedia.org/wiki/Weak_AI
+---
+
+Read [Weak AI](https://en.wikipedia.org/wiki/Weak_AI) on Wikipedia.
