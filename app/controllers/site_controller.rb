@@ -4,7 +4,7 @@ class SiteController < ApplicationController
 
   def index
     # Gather each markdown file
-    definition_files = Dir[Rails.root.join('app','views','definitions','*.md')]
+    definition_files = Dir[Rails.root.join('definitions','*.md')]
 
     # Render each markdown file
     @definitions = []
