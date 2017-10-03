@@ -25,7 +25,7 @@ View http://localhost:3000 in the browser.
 You'll want to:
 
 1) Fork the Project
-2) Add or edit [the markdown files in the app/views/definition directory](https://github.com/sudara/deepjargon/tree/master/app/views/definitions).
+2) Add or edit [the markdown files in the /definitions directory](https://github.com/sudara/deepjargon/tree/master/definitions).
 3) Create a Pull Request
 
 Markdown templates look like so:
