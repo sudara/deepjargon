@@ -79,24 +79,11 @@ function highlightTopResult(){
 
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
-    href = e.target.getAttribute('href') || '/'
-
-    // create history item when actually clicking on a term
-    if (e.target.matches('h2 a')) {
+    // create history item when clicking on home/term
+    if (e.target.matches('h2 a, h1 a, #app ul li a, #remove_query, #remove_query>svg, #remove_query>svg path')) {
+        href = e.target.getAttribute('href') || '/'
         e.preventDefault();
         visitAnchor(href)
-    }
-    // create history item and stay on page if it's homepage
-    if (href == '/') {
-        e.preventDefault();
-        visitAnchor(href)
-    }
-    // allow crosslinking in vue
-    if (e.target.matches('#app ul li a')){
-      if(href.charAt(0) == '#'){ // if it's an anchor
-        e.preventDefault();
-        visitAnchor(href)
-      }
     }
   });
 });

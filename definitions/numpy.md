@@ -1,6 +1,8 @@
 ## [NumPy](#numpy)
 
-Python Matrix library. Rhymes with lumpy. Just kidding. Rhymes with "some pie."
+Python Matrix library.
+
+Rhymes with lumpy. Just kidding. Rhymes with "some pie."
 
 Always imported like so:
 
