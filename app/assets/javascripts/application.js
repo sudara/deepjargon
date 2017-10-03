@@ -68,7 +68,8 @@ function visitAnchor(anchor){
   //console.log(definition.replace('-',' '));
   app.search = definition.replace('-',' ');
   app.$router.push(definition);
-  window.scrollTo(0,0)
+  window.scrollTo(0,0);
+  ga('send', 'pageview', location.pathname);
 }
 
 function highlightTopResult(){
