@@ -2,7 +2,7 @@
 
 [NumPy](#numpy) technique to make array and matrix arithmetic easier.<sup>1</sup>
 
-It implicitly stretches the smaller scalar, array, or matrix to match the shape of the larger one.
+It stretches the smaller scalar, array, or matrix to match the shape of the larger one, without us having to do any work.
 
 ```
 >>> from numpy import array
