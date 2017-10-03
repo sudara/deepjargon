@@ -33,6 +33,9 @@ body{
     border:0;
     background-color:black;
     height:1px;
+    &::after {
+      font-weight:bold;
+    }
   }
   ul{
     margin:0;
@@ -50,6 +53,12 @@ body{
   }
   pre{
     overflow-x: scroll;
+    &.highlight{
+      background-color:#f6f8fa;
+      font-size:80%;
+      line-height:1.3em;
+      padding:1em 2em;
+    }
   }
   span.katex{
     display: block;

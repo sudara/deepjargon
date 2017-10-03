@@ -5,10 +5,11 @@
 It implicitly stretches the smaller scalar, array, or matrix to match the shape of the larger one.
 
 ```
->>> a = array([1.0,2.0,3.0])
->>> b = 2.0
+>>> from numpy import array
+>>> a = array([1,2,3])
+>>> b = 2 # will be broadcast and stretched to a 3 item array
 >>> a * b
-array([ 2.,  4.,  6.])
+array([2, 4, 6])
 ```
 
 ---

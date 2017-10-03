@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'kramdown'
 gem 'katex'
 gem 'jbuilder', '~> 2.5'
+gem 'rouge'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

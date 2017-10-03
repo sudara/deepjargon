@@ -27,7 +27,10 @@ class SiteController < ApplicationController
   end
 
   def convert_to_html(markdown)
-    Kramdown::Document.new(markdown, input: 'GFM', math_engine: 'katex').to_html
+    Kramdown::Document.new(markdown, input: 'GFM',
+      syntax_highlighter: 'rouge',
+      syntax_highlighter_opts:{default_lang: 'python'},
+      math_engine: 'katex').to_html
   end
 
 end

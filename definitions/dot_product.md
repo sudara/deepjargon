@@ -1,6 +1,10 @@
 ## [Dot Product](#dot-product)
 
-Matrix Multiplication. *Not* the element-wise product. In [numpy](#numpy).
+Matrix Multiplication.
+
+*Not* the [element-wise product]((#element_wise_product)).
+
+In [numpy](#numpy):
 
 ```
 a = np.random.randn(3, 3)
