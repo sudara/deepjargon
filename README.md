@@ -33,7 +33,12 @@ Markdown templates look like so:
 ```
 ## [Thing Being Defined](#thing-being-defined)
 
-Text definition. [External link](http://google.com) or link to [other definition](#other-definition).
+Text definition.
+
+Link to [other definition](#other-definition).
+
+---
+Visit [External link](http://google.com) on Google.
 ```
 
 ## Style Guide
