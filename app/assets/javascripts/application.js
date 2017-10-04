@@ -31,8 +31,6 @@ var app = new Vue({
     this.search = window.location.pathname.substr(1).replace('-',' ')
     document.title = window.location.pathname.substr(1)
     document.getElementById('remove_query').style.visibility = "hidden";
-    this.search.trim() === ''
-      highlightTopResult()
   },
   watch: {
     search() {
@@ -47,6 +45,7 @@ var app = new Vue({
         this.result = this.fuse.search(permalink)
         this.$router.replace(permalink)
         document.getElementById('remove_query').style.visibility = "visible";
+        highlightTopResult()
       }
     },
     '$route' (to, from) {
@@ -73,7 +72,8 @@ function visitAnchor(anchor){
 }
 
 function highlightTopResult(){
-
+  var topDef = document.getElementsByClassName('definitions')[0].firstChild
+  topDef.className = "highlighted"
 }
 
 

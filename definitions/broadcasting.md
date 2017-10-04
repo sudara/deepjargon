@@ -1,6 +1,6 @@
 ## [Broadcasting](#broadcasting)
 
-[NumPy](#numpy) technique to make array and matrix arithmetic easier.<sup>1</sup>
+[NumPy](#numpy) technique to make array and matrix arithmetic easier.
 
 It stretches the smaller scalar, array, or matrix to match the shape of the larger one, without us having to do any work.
 

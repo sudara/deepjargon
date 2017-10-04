@@ -38,7 +38,8 @@ Text definition.
 Link to [other definition](#other-definition).
 
 ---
-Visit [External link](http://google.com) on Google.
+1. Visit [External link](http://google.com) on Google.
+2. Watch [Some Video](http:///coursera.com/video/link) on Coursera.
 ```
 
 ## Style Guide

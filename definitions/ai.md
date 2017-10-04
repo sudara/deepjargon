@@ -6,7 +6,7 @@ A marketing term similar to "cloud" or "web 2.0"
 
 A synonym of [Weak AI](#weak-ai).
 
-"Whatever hasn't been done yet" in computing<sup>1</sup>.
+"Whatever hasn't been done yet" in computing.
 
 An umbrella term that encompasses the fields of [machine learning](#machine-learning), computer vision, speech recognition and more.
 

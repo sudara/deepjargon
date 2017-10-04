@@ -9,4 +9,4 @@ Why stop early? To reduce [overfitting](#overfitting).
 Early stopping is a form of [Regularization](#regularization).
 
 ---
-Watch a [video](https://www.coursera.org/learn/deep-neural-network/lecture/Pa53F/other-regularization-methods) on the topic at Coursera.
+1. Watch a [video](https://www.coursera.org/learn/deep-neural-network/lecture/Pa53F/other-regularization-methods) on the topic at Coursera.

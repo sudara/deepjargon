@@ -30,17 +30,27 @@ body{
   hr{
     width:30%;
     margin-left:0;
+    margin-top:1.5em;
     border:0;
-    background-color:black;
+    background-color:#aaa;
     height:1px;
-    &::after {
-      font-weight:bold;
-    }
   }
   ul{
     margin:0;
     padding:0;
     >li{
+      ol{
+        padding-left:1em;
+        padding-top:0em;
+        list-style-position: inside;
+        >li{
+          list-style: none;
+          font-size: 80%;
+          line-height:1.3em;
+          text-indent:none;
+          margin:0;
+        }
+      }
       list-style: none;
       h2 a{
         text-decoration: none;

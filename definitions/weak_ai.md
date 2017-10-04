@@ -8,4 +8,4 @@ See [Strong AI](#strong-ai) if you like good bedtime stories.
 
 ---
 
-Read [Weak AI](https://en.wikipedia.org/wiki/Weak_AI) on Wikipedia.
+1. Read [Weak AI](https://en.wikipedia.org/wiki/Weak_AI) on Wikipedia.

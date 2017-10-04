@@ -8,6 +8,6 @@ See [TensorFlow](#tensorflow).
 
 
 ---
-See [Introduction](http://deeplearning.net/software/theano/introduction.html#introduction]) at DeepLearning.net.
+1. See [Introduction](http://deeplearning.net/software/theano/introduction.html#introduction]) at DeepLearning.net.
 
-Originally Written by the [Lisa lab in Montréal](https://mila.quebec/en/)
+2. Originally Written by the [Lisa lab in Montréal](https://mila.quebec/en/)
