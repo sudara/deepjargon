@@ -8,6 +8,6 @@ For example, a machine is given a set of photos and told which contain cats and 
 
 There are different kinds of regressions depending on the type of data you have. For example:
 
-[Logistic regression](#logistic_regression)
+[Logistic regression](#logistic-regression)
 
-[Linear regression](#linear_regression)
+[Linear regression](#linear-regression)

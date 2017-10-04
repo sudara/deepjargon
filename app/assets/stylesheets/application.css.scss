@@ -19,6 +19,15 @@ body{
   line-height: 1.5em;
   overflow-x:hidden;
 }
+h1{
+  margin-bottom:0em;
+}
+h4{
+  margin-top:0em;
+  margin-bottom:1em;
+  padding:0;
+  color:#666;
+}
 #app{
   max-width: 750px;
   margin: auto;

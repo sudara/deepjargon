@@ -12,12 +12,8 @@ class SiteController < ApplicationController
       @definitions << { title: file.split('/',-1).last.split('.').first.titleize,
         body: convert_to_html(File.open(file).read) }
     end
-    # Convert to json
-
-    # Cache json
-
-    # Render
-
+    @number_of_definitions = definition_files.size
+    @last_updated_at = File.mtime(definition_files.max_by {|f| File.mtime(f)})
   end
 
   protected

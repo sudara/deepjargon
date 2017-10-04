@@ -4,4 +4,4 @@ Dividing inputs into one or more discrete categories via [supervised learning](#
 
 Is something a cat or a dog? Red, Green, Or Yellow?
 
-[Logistic Regression](#logistic_regression) is a go-to method for binary classification.
+[Logistic Regression](#logistic-regression) is a go-to method for binary classification.
