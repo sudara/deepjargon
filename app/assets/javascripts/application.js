@@ -49,8 +49,8 @@ var app = new Vue({
       }
     },
     '$route' (to, from) {
-      //this.search = to.path.substr(1);
-      console.log(to)
+      if(to.path == '/')
+          this.search = ''
     }
   },
   data: {
@@ -64,7 +64,6 @@ var app = new Vue({
 
 function visitAnchor(anchor){
   var definition = anchor.substr(1);
-  //console.log(definition.replace('-',' '));
   app.search = definition.replace('-',' ');
   app.$router.push(definition);
   window.scrollTo(0,0);
