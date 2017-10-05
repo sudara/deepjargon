@@ -1,3 +1,3 @@
 ## [Neural Network](#neural-network)
 
-Synonym to Artificial Neural Network.
+Short for [Artificial Neural Network](#artificial-neural-network), unless the context is biological.

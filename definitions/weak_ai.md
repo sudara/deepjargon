@@ -1,6 +1,10 @@
 ## [Weak AI](#weak-ai)
 
-The only kind of [AI](#ai) that exists. Also called "Narrow AI" or just AI.
+The only kind of [AI](#ai) that exists outside of science fiction.
+
+Intelligence that focuses on a narrow range of tasks.
+
+Also called "Narrow AI."
 
 > Did you even see their AI? So weak.
 

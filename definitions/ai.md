@@ -4,7 +4,7 @@ Artificial Intelligence.
 
 A marketing term similar to "cloud" or "web 2.0"
 
-A synonym of [Weak AI](#weak-ai).
+Functionally, all AI that currently exists is [Weak AI](#weak-ai).
 
 "Whatever hasn't been done yet" in computing.
 
