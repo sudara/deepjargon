@@ -2,7 +2,7 @@
 
 A low level [python](#python) library machine learning and neural network algorithms.
 
-Relies on [NumPy](#numpy) but extends it with GPU support for CUDA.
+Relies on [NumPy](#numpy) but extends it with GPU support for [CUDA](#cuda).
 
 See [TensorFlow](#tensorflow).
 

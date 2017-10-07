@@ -29,7 +29,7 @@ var app = new Vue({
     this.fuse = new window.Fuse(this.list, options)
     this.result = this.list
     this.search = window.location.pathname.substr(1).replace('-',' ')
-    document.title = window.location.pathname.substr(1)
+    setWindowTitle('')
     document.getElementById('remove_query').style.visibility = "hidden";
   },
   watch: {
@@ -39,9 +39,9 @@ var app = new Vue({
         this.$router.replace('/')
         document.getElementById('remove_query').style.visibility = "hidden";
       }else{
-        var permalink = this.search.trim().replace(' ','-')
-        // send the dashed permalink term to the search
+        // use the dashed permalink version of the term for search
         // gives us better results
+        var permalink = this.search.trim().replace(' ','-')
         this.result = this.fuse.search(permalink)
         this.$router.replace(permalink)
         document.getElementById('remove_query').style.visibility = "visible";
@@ -49,8 +49,17 @@ var app = new Vue({
       }
     },
     '$route' (to, from) {
+      // console.log(this.search)
+      // console.log(to.path)
+
+      // back/forward browser buttons don't change the search field
+      // so we must manually change the search field here
       if(to.path == '/')
-          this.search = ''
+        this.search = ''
+      else if (this.search != to.path.substr)
+        this.search = to.path.substr(1).replace('-',' ')
+      setWindowTitle(to.path.substr(1).replace('-',' '))
+
     }
   },
   data: {
@@ -59,15 +68,25 @@ var app = new Vue({
     list: window.definitions,
     result: []
   }
-
 });
 
 function visitAnchor(anchor){
+  // previously we may have typed a definition in
+  // lets save that now
+  app.$router.push(app.search.trim().replace(' ','-'));
+
   var definition = anchor.substr(1);
   app.search = definition.replace('-',' ');
   app.$router.push(definition);
   window.scrollTo(0,0);
   ga('send', 'pageview', location.pathname);
+}
+
+function setWindowTitle(title){
+  if (title == '')
+    document.title = "Deep Jargon"
+  else
+    document.title = "Deep Jargon: " + title
 }
 
 function highlightTopResult(){
@@ -78,11 +97,11 @@ function highlightTopResult(){
 
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
-    // create history item when clicking on home/term
-    if (e.target.matches('h2 a, h1 a, #app ul li a, #remove_query, #remove_query>svg, #remove_query>svg path')) {
-        href = e.target.getAttribute('href') || '/'
-        e.preventDefault();
-        visitAnchor(href)
+    if (e.target.matches('h2 a, h1 a, #app ul>li>div>p>a, #remove_query, #remove_query>svg, #remove_query>svg path')) {
+      href = e.target.getAttribute('href') || '/'
+      e.preventDefault();
+      // create history item when clicking on anchor
+      visitAnchor(href)
     }
   });
 });
