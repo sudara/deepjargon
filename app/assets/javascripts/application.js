@@ -97,11 +97,14 @@ function highlightTopResult(){
 
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
+    var href = e.target.getAttribute('href')
     if (e.target.matches('h2 a, h1 a, #app ul>li>div>p>a, #remove_query, #remove_query>svg, #remove_query>svg path')) {
-      href = e.target.getAttribute('href') || '/'
-      e.preventDefault();
-      // create history item when clicking on anchor
-      visitAnchor(href)
+      href = href || '/'
+      if (!href.startsWith('http')){
+        e.preventDefault();
+        // create history item when clicking on anchor
+        visitAnchor(href)
+      }
     }
   });
 });

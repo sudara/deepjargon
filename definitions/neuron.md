@@ -8,4 +8,4 @@ Neurons have several inputs, each with a weight, as well as an overall bias. The
 
 ---
 
-Watch [3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk)'s explanation.
+1. Watch [3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk)'s explanation.
