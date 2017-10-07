@@ -4,10 +4,11 @@
 
 <div id="app">
   <h1><a href='/'>Deep Jargon</a></h1>
-  <h4><%= @number_of_definitions %> definitions. Last updated <%= @last_updated_at.to_date.to_s(:long) %>.</h4>
+  <h3>Jargon-free since 2017</h3>
   <div class="search">
     <input type="text" v-model="search" id="search" placeholder="search" autofocus>
     <a href='/' id="remove_query"><i class="fa fa-times-octagon fa-2x"></i></a>
+    <p><%= @number_of_definitions %> definitions. Last updated <%= @last_updated_at.to_date.to_s(:long) %>.</p>
   </div>
 
   <ul class="definitions">

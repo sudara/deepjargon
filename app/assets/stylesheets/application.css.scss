@@ -22,11 +22,10 @@ body{
 h1{
   margin-bottom:0em;
 }
-h4{
+h3{
   margin-top:0em;
   margin-bottom:1em;
   padding:0;
-  color:#666;
 }
 #app{
   max-width: 750px;
@@ -69,6 +68,9 @@ h4{
       a{
         color: #002793;
       }
+      p>em{
+        margin-top:-1em;
+      }
     }
   }
   pre{
@@ -91,6 +93,11 @@ h4{
 }
 .search{
   position:relative;
+  p{
+    margin:0;
+    color:#666;
+    font-size:.8em;
+  }
   #remove_query{
     color: #aaa;
     display: inline-block;

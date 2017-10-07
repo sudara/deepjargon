@@ -1,4 +1,5 @@
 ## [ReLU](#relu)
+*Rectified Linear Unit*
 
 Most popular [Activation Function](#activation-function) for [hidden layers](#hidden-layers)
 
