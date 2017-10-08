@@ -48,6 +48,9 @@ h3{
     margin:0;
     padding:0;
     >li{
+      &.highlighted{
+        background-color:#FFFBCC;
+      }
       ol{
         padding-left:1em;
         padding-top:0em;

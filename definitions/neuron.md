@@ -3,7 +3,7 @@
 
 The fundamental unit of a [neural network](#neural-network).
 
-As Grant Sanderson of [3blue1brown](3blue1brown) eloquently describes it:
+As Grant Sanderson of [3blue1brown](#3blue1brown) eloquently describes it:
 
 > A thing that holds a number
 

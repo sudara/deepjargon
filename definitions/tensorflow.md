@@ -5,4 +5,4 @@ A C++ and Python library that enables rapid development of machine learning and 
 Written by Google Brain to replace [Theano](#theano).
 
 ---
-1.
+

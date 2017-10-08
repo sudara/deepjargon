@@ -1,8 +1,6 @@
 ## [Sigmoid](#sigmoid)
 
-[Activation Function](#activation-function)
-
-One of the original activation functions. Usually avoided in modern networks.
+One of the original [activation functions](#activation-function). Usually avoided in modern networks.
 
 S shaped. Range of 0 to 1.
 
