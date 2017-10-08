@@ -1,6 +1,6 @@
 ## [Theano](#theano)
 
-A low level [python](#python) library machine learning and neural network algorithms which is no longer being developed.
+A low level [python](#python) library machine learning and neural network algorithms which is dead in the water as of September 2017.
 
 Relies on [NumPy](#numpy) but extends it with GPU support for [CUDA](#cuda).
 

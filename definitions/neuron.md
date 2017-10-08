@@ -2,9 +2,13 @@
 
 The fundamental unit of a [neural network](#neural-network).
 
-"A thing that holds a number"
+As Grant Sanderson of [3blue1brown](3blue1brown) eloquently describes it:
 
-Neurons have several inputs, each with a weight, as well as an overall bias. These are summed together and handed to an activation function before leaving the neuron.
+> A thing that holds a number
+
+Where all the action happens in the network. As [Siraj](#siraj) says:
+
+> Input times weight, add a bias, activate!
 
 ---
 

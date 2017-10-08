@@ -14,7 +14,7 @@ var app = new Vue({
   mounted() {
     var options = {
       shouldSort: true,
-      threshold: 0.1,
+      threshold: 0.2,
       tokenize: true,
       location: 0,
       distance: 100,
@@ -22,7 +22,7 @@ var app = new Vue({
       minMatchCharLength: 1,
       keys: [
         "title",
-        "body"
+        "text"
       ]
     };
 
@@ -31,6 +31,7 @@ var app = new Vue({
     this.search = window.location.pathname.substr(1).replace('-',' ')
     setWindowTitle('')
     document.getElementById('remove_query').style.visibility = "hidden";
+    //highlightTopResult()
   },
   watch: {
     search() {
@@ -45,7 +46,6 @@ var app = new Vue({
         this.result = this.fuse.search(permalink)
         this.$router.replace(permalink)
         document.getElementById('remove_query').style.visibility = "visible";
-        highlightTopResult()
       }
     },
     '$route' (to, from) {
@@ -59,7 +59,6 @@ var app = new Vue({
       else if (this.search != to.path.substr)
         this.search = to.path.substr(1).replace('-',' ')
       setWindowTitle(to.path.substr(1).replace('-',' '))
-
     }
   },
   data: {

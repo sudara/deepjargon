@@ -1,0 +1,2 @@
+## [Squared Error](#squared-error)
+

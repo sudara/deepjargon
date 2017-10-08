@@ -1,6 +1,5 @@
 ## [AI](#ai)
-
-Artificial Intelligence.
+*Artificial Intelligence*
 
 A marketing term similar to "cloud" or "web 2.0"
 
