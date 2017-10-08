@@ -17,7 +17,7 @@ var app = new Vue({
       threshold: 0.2,
       tokenize: true,
       includeScore: true,
-      location: 10,
+      location: 0,
       distance: 100,
       maxPatternLength: 32, // size of longest term you want to match
       minMatchCharLength: 1,
@@ -111,12 +111,12 @@ function visitAnchor(anchor){
 
 function highlightTopResult(){
   var topDef = document.getElementsByClassName('definitions')[0]
-  if (app.top_score < .6 && topDef !== undefined)
+  if ((app.top_score < .6) && (topDef.firstChild != null))
     topDef.firstChild.className = "highlighted"
 }
 function clearHighlightedTopResult(){
   var highlighted = document.getElementsByClassName('highlighted')
-  if(highlighted[0] !== undefined){
+  if(highlighted[0] != null){
     highlighted[0].className=""
   }
 }
