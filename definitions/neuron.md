@@ -1,4 +1,5 @@
 ## [Neuron](#neuron)
+*Artificial Neuron*
 
 The fundamental unit of a [neural network](#neural-network).
 

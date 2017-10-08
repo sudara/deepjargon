@@ -2,9 +2,9 @@
 
 Python Matrix library.
 
-Rhymes with lumpy. Just kidding. Rhymes with "some pie."
+Rhymes with lumpy. Just kidding. Rhymes with "some pie" or "dumb guy."
 
-Always imported like so:
+Always seen imported like so:
 
 `import numpy as np`
 

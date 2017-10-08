@@ -1,6 +1,8 @@
 ## [Matrix](#matrix)
 
-What if I told you...🕶...a matrix is a just a boring old 2D array.
+What if I told you...🕶...a matrix is a boring old 2D array.
 
-Grid o numbers. Rows and cols. Kinda like Excel, but more boring.
+Grid o' numbers. Rows n' cols.
+
+Kinda like Excel, but less UI.
 
