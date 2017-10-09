@@ -19,3 +19,4 @@
 
 .byebug_history
 .env
+config/initializers/github.rb
