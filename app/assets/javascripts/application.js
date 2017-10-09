@@ -33,7 +33,20 @@ var app = new Vue({
   },
   methods: {
     loadDefinitions: function(){
-      this.search = this.title
+      this.search = this.title()
+    },
+    visitAnchor: function(anchor){
+      // previously we may have typed a definition in
+      // lets save that now
+      app.$router.push(app.permalink);
+
+      var definition = anchor.substr(1);
+      this.$router.push(definition);
+      window.scrollTo(0,0);
+      ga('send', 'pageview', location.pathname);
+    },
+    title: function(){
+      return window.location.pathname.substr(1).replace(/-/g,' ')
     }
   },
   computed: {
@@ -66,9 +79,6 @@ var app = new Vue({
     },
     queryExists: function(){
       return !this.queryIsEmpty
-    },
-    title: function(){
-      return window.location.pathname.substr(1).replace(/-/g,' ')
     }
   },
   watch: {
@@ -95,17 +105,6 @@ var app = new Vue({
   }
 });
 
-function visitAnchor(anchor){
-  // previously we may have typed a definition in
-  // lets save that now
-  app.$router.push(app.permalink);
-
-  var definition = anchor.substr(1);
-  app.search = definition.replace('-',' ');
-  app.$router.push(definition);
-  window.scrollTo(0,0);
-  ga('send', 'pageview', location.pathname);
-}
 
 function highlightTopResult(){
   var topDef = document.getElementsByClassName('definitions')[0]
@@ -122,12 +121,12 @@ function clearHighlightedTopResult(){
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
     var href = e.target.getAttribute('href')
-    if (e.target.matches('h2 a, h1 a, #app ul>li>div>p>a, #remove_query, #remove_query>svg, #remove_query>svg path')) {
+    if (e.target.matches('h2 a, h1 a, #app ul>li>div>p>a')) {
       href = href || '/'
       if (!href.startsWith('http')){
         e.preventDefault();
         // create history item when clicking on anchor
-        visitAnchor(href)
+        app.visitAnchor(href)
       }
     }
   });
