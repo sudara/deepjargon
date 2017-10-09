@@ -20,7 +20,7 @@ class SiteController < ApplicationController
   end
 
   def deploy
-    Rails.logger.warn('deployed!')
+    Rails.logger.warn('deploying!')
     if `git diff origin/master Gemfile.lock` > ""
       Rails.logger.warn("bundle changed, bundle installing")
       `git reset --hard origin/master; bundle install --deployment`
@@ -29,7 +29,7 @@ class SiteController < ApplicationController
     end
     FileUtils.touch("#{Rails.root}/tmp/restart.txt")
     sleep(1)
-    FileUtils.rm_f("/data/deepjargon/public/index.html")
+    FileUtils.rm_f("#{Rails.root}/public/index.html")
   end
 
   protected
