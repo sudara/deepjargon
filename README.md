@@ -2,7 +2,15 @@
 
 ## A Simple Little App
 
-Stupid simple Rails app in back. Stupid simple Vue.js app in the front. It takes markdown in the `app/views/definitions` directory, compiles it to json and dumps it in the html for vue to use.
+Stupid simple Rails app in back.
+Stupid simple Vue.js app in the front.
+
+This is the flow:
+
+1. Concatenate markdown in the [definitions](https://github.com/sudara/deepjargon/tree/master/definitions) directory...
+2. Compile it to json...
+3. Dump it in the html for vue.js to use...
+4. Write out a file for the front end server to cache.
 
 ## Installation
 
