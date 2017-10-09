@@ -22,6 +22,7 @@ class SiteController < ApplicationController
 
   def deploy
     Rails.logger.warn('deploying!')
+    `git fetch`
     if `git diff origin/master Gemfile.lock` > ""
       Rails.logger.warn("bundle changed, bundle installing")
       `git reset --hard origin/master; bundle install --deployment`
