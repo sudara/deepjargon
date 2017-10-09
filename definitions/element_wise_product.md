@@ -1,6 +1,6 @@
 ## [Element-wise Product](#element_wise_product)
 
-Multiple two arrays or matrices of the same size by walking through their elements and multiplying them together.
+Multiply two arrays or matrices of the same size by walking through their elements and multiplying them together.
 
 ---
 
