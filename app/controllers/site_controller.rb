@@ -32,6 +32,7 @@ class SiteController < ApplicationController
     FileUtils.touch("#{Rails.root}/tmp/restart.txt")
     sleep(1)
     FileUtils.rm_f("#{Rails.root}/public/index.html")
+    `curl https://deepjargon.com`
   end
 
   protected
