@@ -2,7 +2,7 @@
 
 Programming environment for statistics and science.
 
-Where neural networks grew up before specialized tools were developed and extracted.
+Where neural networks were prototyped before they were cool.
 
 Andrej Karpathy tweeted:
 
