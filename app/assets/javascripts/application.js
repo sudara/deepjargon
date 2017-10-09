@@ -63,7 +63,7 @@ var app = new Vue({
           console.log(items_and_score.map(function(i){ return [i.item.title, i.score]}))
           this.top_score = items_and_score[0].score
         }
-        document.title = "Deep Jargon: " + this.title
+        document.title = "Deep Jargon: " + this.title()
         highlightTopResult()
         return items_and_score.map(function(i){ return i.item})
       }
