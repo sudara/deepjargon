@@ -1,5 +1,6 @@
 ActiveSupport.escape_html_entities_in_json = false
 class SiteController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :verify_github_payload, only: :deploy
   after_action :render_response_to_file, only: :index
 
