@@ -30,7 +30,7 @@ class SiteController < ApplicationController
       `git reset --hard origin/master`
     end
     FileUtils.touch("#{Rails.root}/tmp/restart.txt")
-    sleep(1)
+    sleep(3)
     FileUtils.rm_f("#{Rails.root}/public/index.html")
     `curl https://deepjargon.com`
   end
