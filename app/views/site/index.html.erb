@@ -6,13 +6,13 @@
   <h1><a href='/'>Deep Jargon</a></h1>
   <h3>Jargon-free since 2017</h3>
   <div class="search">
-    <input type="text" v-model="search" id="search" placeholder="search" autocomplete="off" autofocus>
-    <a href='/' id="remove_query"><i class="fa fa-times-octagon fa-2x"></i></a>
+    <input type="text" v-model.trim="search" id="search" placeholder="search" autocomplete="off" autofocus>
+    <a href='/' id="remove_query" v-show="queryExists"><i class="fa fa-times-octagon fa-2x"></i></a>
     <p><%= @number_of_definitions %> definitions. Last updated <%= @last_updated_at.to_date.to_s(:long) %>.</p>
   </div>
 
   <ul class="definitions">
-    <li v-for="definition in result">
+    <li v-for="definition in result" class="{{definition.highlighted}}">
       <div v-html="definition.body"></div>
     </li>
   </ul>

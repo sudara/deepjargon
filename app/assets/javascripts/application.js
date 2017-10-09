@@ -40,11 +40,9 @@ var app = new Vue({
     result: function(){
       clearHighlightedTopResult()
       if(this.queryIsEmpty){
-        document.getElementById('remove_query').style.visibility = "hidden";
         document.title = "Deep Jargon"
         return this.list
       }else{
-        document.getElementById('remove_query').style.visibility = "visible";
         // use the dashed permalink version of the term for search
         // gives us better results
         var items_and_score = this.fuse.search(this.permalink)
@@ -61,13 +59,13 @@ var app = new Vue({
       if(this.queryIsEmpty)
         return '/'
       else
-        return this.query.replace(/\s/g,'-')
-    },
-    query: function(){
-      return this.search.trim()
+        return this.search.replace(/\s/g,'-')
     },
     queryIsEmpty: function(){
-      return this.query === ''
+      return this.search === ''
+    },
+    queryExists: function(){
+      return !this.queryIsEmpty
     },
     title: function(){
       return window.location.pathname.substr(1).replace(/-/g,' ')
