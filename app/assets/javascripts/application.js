@@ -43,10 +43,14 @@ var app = new Vue({
       var definition = anchor.substr(1);
       this.$router.push(definition);
       window.scrollTo(0,0);
+      this.changeH3();
       ga('send', 'pageview', location.pathname);
     },
     title: function(){
       return window.location.pathname.substr(1).replace(/-/g,' ')
+    },
+    changeH3: function(){
+      document.getElementsByTagName('h3')[0].innerHTML = this.taglines.pick();
     }
   },
   computed: {
@@ -101,10 +105,16 @@ var app = new Vue({
     fuse: null,
     search: '',
     top_score:0.0,
-    list: window.definitions
+    list: window.definitions,
+    taglines: ['Jargon-free Since 2017.','Deepier Than Thou.',
+      'PhD Optional. Decoder Ring Required','Deep Learning + Snark - Jargon.',
+      'Get Yourself Deep Learnt.','Deep Learning With A Side of Shallow.']
   }
 });
 
+Array.prototype.pick = function () {
+  return this[Math.floor(Math.random() * this.length)]
+}
 
 function highlightTopResult(){
   var topDef = document.getElementsByClassName('definitions')[0]
