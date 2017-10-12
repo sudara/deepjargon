@@ -1,4 +1,5 @@
-## [Music Information Retrieval (MIR)](#music-information-retrieval)
+## [Music Information Retrieval ](#music-information-retrieval)
+*MIR*
 
 A subfield of machine learning concerned with music and audio.
 

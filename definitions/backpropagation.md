@@ -1,6 +1,5 @@
 ## [Backpropagation](#backpropagation)
-*Backward propagation of errors*
-*Backprop*
+*Backward propagation of errors | Backprop*
 
 A part of the [Gradient Descent](#gradient-descent) algorithm.
 

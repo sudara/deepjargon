@@ -21,20 +21,23 @@ body{
   background-color: #f1f5f6;
 }
 h1{
-
   margin-bottom:0em;
+  font-size:2em;
   a{
+    font-family: "Operator Mono SSm";
+    font-weight: 700;
     color: black;
     text-decoration:none;
     span{
       font-size:1.2em;
-      padding-right:.1em;
     }
   }
 }
 h3{
-  font-size:1em;
-  margin-top:0em;
+  color:#666;
+  font-size: .85em;
+  font-family: "Operator Mono SSm";
+  margin-top: 0.4em;
   margin-bottom:1em;
   padding:0;
 }
@@ -99,14 +102,24 @@ h3{
       a{
         color: #002793;
       }
+      p{
+        position:relative;
+      }
       p>em{
+        display:block;
         margin-top:-1em;
+        font-family: "Operator Mono";
+        font-style:italic;
       }
     }
   }
   pre{
     overflow-x: scroll;
     &.highlight{
+      code{
+        font-family: "Operator Mono SSm";
+        font-weight: normal;
+      }
       background-color:#f6f8fa;
       font-size:80%;
       line-height:1.3em;
@@ -120,6 +133,9 @@ h3{
   }
   h2{
     margin-top:2em;
+    font-family: "Operator Mono";
+    font-weight:800;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.1);
   }
 }
 .search{
