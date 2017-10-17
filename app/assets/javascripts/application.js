@@ -1,6 +1,7 @@
 //= require_tree
 //= require vue/dist/vue.min
 //= require vue-router/dist/vue-router.min
+//= require vue-meta/lib/vue-meta.min
 //= require fuse.js/dist/fuse.min
 
 window.Fuse = Fuse;
@@ -51,6 +52,10 @@ var app = new Vue({
     },
     changeH3: function(){
       document.getElementsByTagName('h3')[0].innerHTML = this.taglines.pick();
+    },
+    highlightTopResult: function(){
+      if (this.topDefinitionExists)
+        this.topDefinition.className = "highlighted"
     }
   },
   computed: {
@@ -62,14 +67,22 @@ var app = new Vue({
       }else{
         // use the dashed permalink version of the term for search
         // gives us better results
-        var items_and_score = this.fuse.search(this.permalink)
-        if(items_and_score.length > 0){
-          console.log(items_and_score.map(function(i){ return [i.item.title, i.score]}))
-          this.top_score = items_and_score[0].score
+        var itemsAndScore = this.fuse.search(this.permalink)
+        if(itemsAndScore.length > 0){
+          this.unknown = 0
+          console.log(itemsAndScore.map(function(i){ return [i.item.title, i.score]}))
+          this.topScore = itemsAndScore[0].score
+          document.title = "Deep Jargon: " + this.title()
+          this.highlightTopResult()
+          return itemsAndScore.map(function(i){ return i.item})
+        }else{
+          var unknownResponses=["Hmm, dunno that one...","Still dunno that...","Really, no idea.",
+          "Are you even listening?", "Come on.", "Can't even."]
+          document.title = "Deep Jargon: 404 Not Found"
+          if(unknownResponses.length > this.unknown)
+            this.unknown++
+          return [{'body': '<h2>404: '+this.search+"</h2><p>" + unknownResponses[this.unknown-1] + "</p>" }]
         }
-        document.title = "Deep Jargon: " + this.title()
-        highlightTopResult()
-        return items_and_score.map(function(i){ return i.item})
       }
     },
     permalink: function(){
@@ -83,6 +96,25 @@ var app = new Vue({
     },
     queryExists: function(){
       return !this.queryIsEmpty
+    },
+    definitions: function(){
+      this.queryExists
+      return document.getElementsByClassName('definitions')[0]
+    },
+    topDefinition: function(){
+      return this.definitions.firstChild
+    },
+    topDefinitionExists: function(){
+      return (this.topScore < .6) && (this.topDefinition != null)
+    },
+    canonicalURL: function(){
+      url = "https://deepjargon.com/"
+      if(this.queryIsEmpty)
+        return url
+      else if(this.topDefinitionExists)
+        return url + this.topDefinition.getElementsByTagName('a')[0].getAttribute('href').substr(1)
+      else
+        return url + '404'
     }
   },
   watch: {
@@ -104,23 +136,29 @@ var app = new Vue({
   data: {
     fuse: null,
     search: '',
-    top_score:0.0,
+    topScore:1.0,
     list: window.definitions,
+    unknown:0,
     taglines: ['Jargon-free Since 2017.','Deepier Than Thou.',
       'PhD Optional. Decoder Ring Required','Deep Learning + Snark - Jargon.',
       'Get Yourself Deep Learnt.','Deep Learning With A Side of Shallow.']
-  }
+  },
+  metaInfo () {
+     return {
+       script: [
+         { innerHTML: '{ "@context": "http://schema.org","@type": "Article","name": "'+ this.title()+'" }', type: 'application/ld+json' }
+       ],
+       link:[
+         { rel: 'canonical', href: this.canonicalURL }
+       ]
+     }
+   }
 });
 
 Array.prototype.pick = function () {
   return this[Math.floor(Math.random() * this.length)]
 }
 
-function highlightTopResult(){
-  var topDef = document.getElementsByClassName('definitions')[0]
-  if ((app.top_score < .6) && (topDef.firstChild != null))
-    topDef.firstChild.className = "highlighted"
-}
 function clearHighlightedTopResult(){
   var highlighted = document.getElementsByClassName('highlighted')
   if(highlighted[0] != null){

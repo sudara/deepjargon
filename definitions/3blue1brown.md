@@ -1,6 +1,6 @@
 ## [3Blue1Brown](#3blue1brown)
 
-A great YouTube channel to brush up on [linear algebra](#linear-algebra) and calculus.
+YouTube channel with videos on [linear algebra](#linear-algebra) and calculus and neural network basics.
 
 A strong emphasis on visual intuition and understanding.
 

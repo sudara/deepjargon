@@ -20,6 +20,16 @@ class SiteController < ApplicationController
     @last_updated_at = File.mtime(definition_files.max_by {|f| File.mtime(f)})
   end
 
+  def sitemap
+    definition_files = Dir[Rails.root.join('definitions','*.md')]
+    url = 'https://deepjargon.com/'
+    links = definition_files.collect{|d| url + d.split('/').last.split('.')[0].gsub('_','-')}
+    links << url
+    text = links.join("\n")
+    render plain: text
+    File.open(File.join(Rails.root,'public/sitemap.txt'), "wb+") { |f| f.write(text) } unless Rails.env.development?
+  end
+
   def deploy
     Rails.logger.warn('deploying!')
     `git fetch`
@@ -32,9 +42,14 @@ class SiteController < ApplicationController
     FileUtils.touch("#{Rails.root}/tmp/restart.txt")
     sleep(1)
     FileUtils.rm_f("#{Rails.root}/public/index.html")
+    FileUtils.rm_f("#{Rails.root}/public/sitemap.txt")
   end
 
   protected
+
+  def gather_definitions
+
+  end
 
   def verify_github_payload
     request.body.rewind

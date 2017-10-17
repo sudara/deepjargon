@@ -4,6 +4,7 @@
   "dependencies": {
     "fuse.js": "^3.1.0",
     "vue": "^2.4.2",
+    "vue-meta": "^1.2.0",
     "vue-router": "^2.7.0"
   }
 }
