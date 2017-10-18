@@ -1,4 +1,5 @@
 ## [Artificial Neural Network](#artificial-neural-network)
+*ANN*
 
 A bunch of connected [neurons](#neuron) that when trained, learn to perform tasks such as image [classification](#classification) without being explicitly told **how**.
 

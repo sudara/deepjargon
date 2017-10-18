@@ -1,6 +1,7 @@
 ## [Backpropagation Through Time](#backpropagation-through-time)
+*BPTT*
 
-Requires a DeLorean and some garbage as fuel.
+Apparently requires a DeLorean and some garbage as fuel.
 
-A variant of [backprop](#backpropagation) for [RNNs](#recurrant-neural-network).
+A variant of [backprop](#backpropagation) used to train [RNNs](#recurrant-neural-network).
 
