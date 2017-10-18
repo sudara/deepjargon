@@ -4,3 +4,4 @@ The long and short of it: Wouldn't it be cool if networks had the ability to rem
 
 An [RNN](#rnn) that remembers values, allowing it to efficiently predict time series data.
 
+Originally proposed to solve the [vanishing gradient problem](#vanishing gradient) problem.
