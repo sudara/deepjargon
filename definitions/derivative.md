@@ -3,5 +3,5 @@
 Slope of a function.
 
 $$
-m={\frac {{\text{change in }}y}{{\text{change in }}x}}={\frac {\Delta y}{\Delta x}}
+{\displaystyle m={\frac {{\text{change in }}y}{{\text{change in }}x}}={\frac {\Delta y}{\Delta x}}}
 $$
