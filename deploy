@@ -27,6 +27,11 @@ ssh alonetone '
       echo
   fi
 
+  if [[ $(git diff origin/master Gemfile.lock) > "" ]]; then
+      echo "yarn.lock changed, yarn installing...";
+      yarn install;
+  fi
+
    echo "Compiling assets..."
    RAILS_ENV=production bundle exec rake assets:precompile
   '

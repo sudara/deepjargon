@@ -22,12 +22,15 @@ body{
   line-height: 1.5em;
   overflow-x:hidden;
   background-color: #f1f5f6;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
+  font-style: normal;
+  font-weight: 400;
 }
 h1{
   margin-bottom:0em;
   font-size:2em;
   a{
-    font-family: "Operator Mono SSm";
+    font-family: "Operator Mono SSm A", "Operator Mono SSm B";
     font-weight: 700;
     color: black;
     text-decoration:none;
@@ -39,7 +42,9 @@ h1{
 h3{
   color:#666;
   font-size: .85em;
-  font-family: "Operator Mono SSm";
+  font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+  font-style: italic;
+  font-weight: 400;
   margin-top: 0.4em;
   margin-bottom:1em;
   padding:0;
@@ -111,7 +116,9 @@ h3{
       p>em{
         display:block;
         margin-top:-1em;
-        font-family: "Operator Mono";
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-weight: 400;
         font-style:italic;
       }
     }
@@ -120,8 +127,9 @@ h3{
     overflow-x: scroll;
     &.highlight{
       code{
-        font-family: "Operator Mono SSm";
-        font-weight: normal;
+        font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+        font-style: normal;
+        font-weight: 400;
       }
       background-color:#f6f8fa;
       font-size:80%;
@@ -136,9 +144,9 @@ h3{
   }
   h2{
     margin-top:2em;
-    font-family: "Operator Mono";
-    font-weight:800;
-    text-shadow: 1px 1px 0px rgba(0,0,0,.1);
+    font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
+    font-style: normal;
+    font-weight: 700;
   }
 }
 .search{
