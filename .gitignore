@@ -21,3 +21,5 @@
 .env
 config/initializers/github.rb
 public/index.html
+public/sitemap.txt
+public/fonts/
