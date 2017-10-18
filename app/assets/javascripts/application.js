@@ -76,12 +76,12 @@ var app = new Vue({
           this.highlightTopResult()
           return itemsAndScore.map(function(i){ return i.item})
         }else{
-          var unknownResponses=["Hmm, dunno that one...","Still dunno that...","Really, no idea.",
-          "Are you even listening?", "Come on.", "Can't even."]
+          var unknownResponses=["Hmm, don't know that one...","Still dunno what that is...","Really, no idea.",
+          "Nope. Still don't know that.", "Can't even.", "Sorry, never heard of that."]
           document.title = "Deep Jargon: 404 Not Found"
           if(unknownResponses.length > this.unknown)
             this.unknown++
-          return [{'body': '<h2>404: '+this.search+"</h2><p>" + unknownResponses[this.unknown-1] + "</p>" }]
+          return [{'body': '<h2>404 Not Found: '+this.search+"</h2><p>" + unknownResponses[this.unknown-1] + "</p>" }]
         }
       }
     },
