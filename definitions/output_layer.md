@@ -1,6 +1,6 @@
 ## [Output Layer](#output-layer)
 
-Last layer of [neurons](#neuron) in an [artificial neural network](#artificial_neural_network).
+Last [layer](#layer) of [neurons](#neuron).
 
 This layer determines the network's conclusion about the data it just saw based on information from the previous layer. For example, does the current picture contain a cat? Yes or no?
 
