@@ -16,15 +16,18 @@
  */
 html{
   overflow-y:scroll;
+  background: image-url("background2.jpg") repeat top left;
+  background-size: 200px 200px;
+  margin:0;
 }
 body{
+  margin:0;
   font-size: 16px;
   line-height: 1.5em;
   overflow-x:hidden;
-  background-color: #f1f5f6;
   font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 h1{
   margin-bottom:0em;
@@ -34,29 +37,39 @@ h1{
     font-weight: 700;
     color: black;
     text-decoration:none;
+    strong{
+      font-weight:500;
+      letter-spacing:-3px;
+    }
     span{
       font-size:1.2em;
+      margin-right:-.1em;
     }
   }
 }
 h3{
-  color:#666;
-  font-size: .85em;
-  font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+  color:#333;
+  font-size: 1em;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
   font-style: italic;
-  font-weight: 400;
-  margin-top: 0.4em;
-  margin-bottom:1em;
+  font-weight:500;
+  margin-top: 0.2em;
+  margin-bottom:1.2em;
   padding:0;
 }
 #app{
   max-width: 750px;
   margin: auto;
+  @media only screen and (max-width: 640px){
+    padding-left:1em;
+  }
   #search{
     margin:auto;
     font-size:18px;
-    height:35px;
-    width:50%;
+    height:32px;
+    font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
+    font-weight: 300;
+    text-indent:3px;
   }
   hr{
     width:30%;
@@ -67,11 +80,11 @@ h3{
     height:1px;
   }
   ul{
-    margin-left:-2.8em;
+    margin-left:-2em;
     padding:0;
     >li{
       position:relative;
-      padding:2em 3em;
+      padding:2em 2em;
       margin-bottom:2em;
       box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .05);
       border-radius: .5em;
@@ -81,7 +94,9 @@ h3{
       transition: box-shadow .25s ease-out, -webkit-transform .25s ease-out;
       transition: transform .25s ease-out, box-shadow .25s ease-out;
       transition: transform .25s ease-out, box-shadow .25s ease-out, -webkit-transform .25s ease-out;
-
+      @media only screen and (max-width: 640px){
+        padding-left:3em;
+      }
       &.highlighted{
         box-shadow: 0 12px 16px rgba(0, 0, 0, .15);
         -webkit-transform: translateY(-2px);
@@ -110,9 +125,6 @@ h3{
       a{
         color: #002793;
       }
-      p{
-        position:relative;
-      }
       p>em{
         display:block;
         margin-top:-1em;
@@ -122,8 +134,15 @@ h3{
       }
     }
   }
+  blockquote{
+    background-color:#f6f8fa;
+    font-style:italic;
+    border-left:5px solid #ccc;
+    margin:0em 1em;
+    padding: .5em 1em;
+  }
   pre{
-    overflow-x: scroll;
+    overflow-x: auto;
     &.highlight{
       code{
         font-family: "Operator Mono SSm A", "Operator Mono SSm B";
@@ -145,11 +164,12 @@ h3{
     margin-top:2em;
     font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 .search{
   position:relative;
+  margin-bottom:1.5em;
   p{
     margin:0;
     color:#666;

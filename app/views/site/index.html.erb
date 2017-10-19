@@ -3,10 +3,10 @@
 </script>
 
 <div id="app">
-  <h1><router-link to="/"><span>∂</span><i>e</i>∑p Jα<sup>r</sup>g(θ)<sub>n</sub></router-link></h1>
-  <h3>Deep Learning + Snark - Jargon</h3>
+  <h1><router-link to="/"><span>∂</span><i>e</i>∑p Jα<sup>r</sup>gθ<sub>n</sub></router-link></h1>
+  <h3>Deep Learning <strong>+</strong> Snark <strong>-</strong> Jargon</h3>
   <div class="search">
-    <input type="text" v-model.trim="search" id="search" placeholder="search" autocomplete="off" autofocus>
+    <input type="text" v-model.trim="search" id="search" placeholder="search" autocomplete="off" size="32" autofocus>
     <router-link to="/" id="remove_query" v-show="queryExists"><i class="fa fa-times-octagon fa-2x"></i></router-link>
     <p><%= @number_of_definitions %> definitions. Last updated <%= @last_updated_at.to_date.to_s(:long) %>.</p>
   </div>

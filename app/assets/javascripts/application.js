@@ -169,7 +169,7 @@ function clearHighlightedTopResult(){
 document.addEventListener("DOMContentLoaded", function(event) {
   this.addEventListener('click', function(e){
     var href = e.target.getAttribute('href')
-    if (e.target.matches('h2 a, h1 a, #app ul>li>div>p>a')) {
+    if (e.target.matches('h2 a, #app ul>li>div>p>a')) {
       href = href || '/'
       if (!href.startsWith('http')){
         e.preventDefault();
