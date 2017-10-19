@@ -2,7 +2,7 @@
 
 If "Data is the new oil" then a dataset is an oil tanker.
 
-Datasets are often broken into a [training set](#training-set) and a [test set](#test-set).
+Datasets are often broken into a [training set](#training-set) which has the majority of the data, a [dev set](#dev-set) and a [test set](#test-set).
 
 See [MNIST](#mnist).
 
