@@ -1,4 +1,5 @@
 ## [Strong AI](#strong-ai)
+*General Artificial Intelligence*
 
 <insert picture of HAL 9000>
 
