@@ -10,3 +10,4 @@ See [Variance](#variance).
 
 ---
 1. Watch [Bias/Variance](https://www.coursera.org/learn/deep-neural-network/lecture/ZhclI/bias-variance) on Coursera.
+2. Read [Understanding Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html).

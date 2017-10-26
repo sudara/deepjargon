@@ -1,5 +1,3 @@
 ## [Training Set](#training-set)
 
-What you use to train your models.
-
-The majority of the [Dataset](#dataset).
+The majority portion of your [Dataset](#dataset) that you will use to train your models.
