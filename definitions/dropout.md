@@ -2,7 +2,7 @@
 
 My personal university status. Don't do this, or you'll never be a Hero Of Deep Learning.
 
-Popular [regularization](#regularization) technique. Randomly shuts down a percentage of neurons during each [iteration](#iteration).
+Popular [regularization](#regularization) technique. Randomly shuts down a percentage of [neurons](#neurons) during each [iteration](#iteration).
 
 By masking individual neurons, they are discouraged from being individually relied upon, as they might not be available on each iteration.
 
