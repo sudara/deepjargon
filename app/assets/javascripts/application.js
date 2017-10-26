@@ -62,7 +62,7 @@ var app = new Vue({
     result: function(){
       clearHighlightedTopResult()
       if(this.queryIsEmpty){
-        document.title = "Deep Jargon"
+        document.title = "Deep Jargon = Deep Learning + Snark - Jargon"
         return this.list
       }else{
         // use the dashed permalink version of the term for search
@@ -72,7 +72,6 @@ var app = new Vue({
           this.unknown = 0
           console.log(itemsAndScore.map(function(i){ return [i.item.title, i.score]}))
           this.topScore = itemsAndScore[0].score
-          document.title = "Deep Jargon: " + this.title()
           this.highlightTopResult()
           return itemsAndScore.map(function(i){ return i.item})
         }else{
