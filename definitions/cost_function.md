@@ -6,7 +6,7 @@ Usually involves averaging the difference between the [ground truth](#ground-tru
 
 As [3blue1brown](#3blue1brown) puts it:
 
-> Spits out a single measure of lousiness based on the training examples
+> A single measure of lousiness based on the training examples
 
 You might recognize it in a form such as:
 

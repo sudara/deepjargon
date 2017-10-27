@@ -1,7 +1,9 @@
 ## [Gradient Descent](#gradient-descent)
 
-The meat and potatoes of deep learning. The Math that makes it all possible.
+The meat and potatoes of deep learning. The math that makes deep learning possible.
 
-Imagine an old man shuffling down a hill. Between each tiny step he looks to make sure the direction he's going in is the fastest one possible.
+An algorithm that tries to find the minimum of the [cost function](#cost-function) by [iterating](#iteration).
 
-See also: [Grad Student Descent](#grad-student-descent)
+Imagine an old woman shuffling down a hill. Between each step she looks to make sure the direction she's going in is the fastest one possible.
+
+See also: [Grad Student Descent](#grad-student-descent).
