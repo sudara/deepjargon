@@ -1,4 +1,4 @@
-##[Learning Rate Decay](#learning-rate-decay)
+## [Learning Rate Decay](#learning-rate-decay)
 
 Instead of having a fixed [learning rate](#learning-rate), decreasing the value as [training](#training) progresses in order to expedite the process.
 
