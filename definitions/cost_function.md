@@ -1,5 +1,7 @@
 ## [Cost Function](#cost-function)
 
+How well the [model](#model) fits the [dataset](#dataset).
+
 A way to measure the accuracy of predictions.
 
 Usually involves averaging the difference between the [ground truth](#ground-truth) values and the predicted values.

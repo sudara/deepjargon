@@ -1,6 +1,6 @@
-## [ipython](#ipython)
+## [IPython](#ipython)
 
 Short for Interactive [Python](#python).
 
-An interactive [Python](#python) shell which powers [Jupyter](#jupyter) notebooks in Python.
+An [Python](#python) shell which powers [Jupyter](#jupyter) notebooks in Python.
 
