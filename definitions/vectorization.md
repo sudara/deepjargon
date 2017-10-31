@@ -1,6 +1,6 @@
 ## [Vectorization](#vectorization)
 
-To avoid for-loops and speed up calculation, we stick the values of a training example into a [vector](#vector) and then stack the vectors into a [matrix](#matrix).
+To avoid for-loops and speed up calculation, we stick data into [vector](#vector) and stack them into a [matrix](#matrix).
 
 
 ---
