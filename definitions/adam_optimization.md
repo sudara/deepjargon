@@ -1,7 +1,7 @@
 ## [Adam Optimization](#adam-optimization)
 *Adaptive Moment Estimation*
 
-A way of speeding up [gradient descent](#gradient-descent) that
+A way of speeding up [gradient descent](#gradient-descent) that combines [gradient descent with momentum](#gradient-descent-with-momentum) and [RMSprop](#rmsprop).
 
 ---
 1. Read [Adam Optimizer](https://keras.io/optimizers/#adam) in Keras docs.

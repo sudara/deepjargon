@@ -1,6 +1,6 @@
 ## [Dropout](#dropout)
 
-My personal university status. Don't do this, or you'll never be a Hero Of Deep Learning.
+My university status. Don't do this, or you'll never be a Hero Of Deep Learning™.
 
 Popular [regularization](#regularization) technique. Randomly shuts down a percentage of [neurons](#neurons) during each [iteration](#iteration).
 
