@@ -1,4 +1,4 @@
-##[RMSprop](#rmsprop)
+## [RMSprop](#rmsprop)
 *Root Mean Square Prop*
 
 A way of speeding up [gradient descent](#gradient-descent).
