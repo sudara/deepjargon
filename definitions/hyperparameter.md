@@ -4,9 +4,13 @@ A faster-than-light method of travel used in—wait, what?
 
 Variables set before the learning starts.
 
-Big picture things, like number of iterations or learning rate.
+The trial and error nature of tuning these is why [Grad Student Descent](#grad-student-descent) has been so important.
 
-The reason why you need [Grad Student Descent](#grad-student-descent).
+Examples:
+* α [Learning Rate](#learning-rate)
+* β [Momentum](#momentum)
+* [batch size](#batch-size)
+* number of [layers](#layer)
+* number of [neurons](#neurons) in the [hidden layers](#hidden-layer)
 
 If your parameters are too hyper, ask your doctor about what Ritalin can do for your model.
-

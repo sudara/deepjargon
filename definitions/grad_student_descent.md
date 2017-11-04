@@ -2,7 +2,7 @@
 
 How networks go from prototype to published paper, published paper to production.
 
-A bad joke illustrating that designing networks and tuning their [hyperparameters](#hyperparameter) is often an art rather than a science.
+A bad joke illustrating that designing networks and tuning their [hyperparameters](#hyperparameter) is often a tedious art best left for minions rather than a science.
 
 ---
 
