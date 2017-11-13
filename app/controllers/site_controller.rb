@@ -14,7 +14,7 @@ class SiteController < ApplicationController
       contents = File.open(file).read
       @definitions << { title: file.split('/',-1).last.split('.').first.titleize,
                         body: convert_to_html(contents),
-                        text: contents.gsub(/\[\(\#/,'')}
+                        text: contents.gsub(/\[|\(|\#|\*|\]|\)/,'')}
     end
     @number_of_definitions = definition_files.size
     @last_updated_at = File.mtime(definition_files.max_by {|f| File.mtime(f)})

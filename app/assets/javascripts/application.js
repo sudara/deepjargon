@@ -25,7 +25,7 @@ var app = new Vue({
       keys: [{
           name: 'title'
         }, {
-          name: 'text'
+          name: 'body'
       }]
     };
 

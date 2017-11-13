@@ -1,4 +1,5 @@
 ## [y hat](#y-hat)
+*Predictions*
 
 `ŷ`
 
