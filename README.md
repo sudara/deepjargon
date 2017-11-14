@@ -4,16 +4,17 @@ Coming to Neural Networks from another programming field can be pretty daunting.
 
 Although "naming things" is purported to be one of the [2 hard things in computer science](https://martinfowler.com/bliki/TwoHardThings.html), apparently:
 
-1) It's highly incentivized in academia to brand anything remotely novel (first!) and
-2) In deep learning in particular, there's a literal race to win competitions and stake your branded flag in the ground.
+1. It's highly incentivized in academia to brand anything remotely novel (first!) and
+2. Deep Learning has high profile competitions in which you can stake your branded flag in the ground.
+3. The field is moving fast and furiously, with buy-in from all major tech companies
 
-This results in a slew of complex, sophisticated sounding pieces of jargon that are often just straightforward modifications to a few basic recipes.
+This results in a slew of complex, sophisticated sounding pieces of jargon that are often fairly straightforward modifications to a few basic recipes.
 
-Ironically, this can make Deep Learning more difficult to actually... learn. You know, as a human. Additionally, an community filled with state-of-the-art jargon artificially inflates the gap between the [in and the outgroups](https://en.wikipedia.org/wiki/Ingroups_and_outgroups), making the perceived bar higher to be a part of the cool kids club.
+Ironically, this can make Deep Learning more difficult to actually... learn. You know, as a human. Additionally, an community filled with state-of-the-art jargon can artificially inflate the gap between the [in and the outgroups](https://en.wikipedia.org/wiki/Ingroups_and_outgroups), raising the perceived bar higher to be a part of the cool kids club.
 
-But rest assured: This stuff is basically like bread baking. It's a straightforward science, sort of. But for great results, it's an art that takes a good amount of practice. There are a shit-ton of variations of bread from all sorts of countries with all sorts of complicated names. Some bread has eggs, other breads have leaveners of different varieties, others have specific seed mixtures on top. But all you really need is flour and water. You know, matrix multiplications and GPUs....uh...wait, does this analogy not really hold up? Shit. Good thing this is just some README. I'll just rename to DONT_README and we'll be all good.
+Rest assured: This stuff is basically like bread baking, amirite? It's totally a straightforward science, kind of sort of. Ok, we can say this for sure: it's an art and a craft that takes a good amount of practice. There are a shit-ton of variations of bread from all sorts of countries with all sorts of complicated names. Some bread has eggs, other breads have leaveners of different varieties, others have specific seed mixtures on top or specific ways they need to be slashed. But all you really need at the end of the day is flour and water. You know, matrix multiplications and GPUs....uh...wait, does this analogy not actually hold up? Shit. Good thing this is just some README. I'll just rename to DONT_README.md and we'll be all good.
 
-Anyway, if you are like me, and determined to jump into the deep end without a PhD advisor in sight to reassure you: enjoy! You will be saved years of [grad student descent](#https://deepjargon.com/grad-student-descent) and instead are free to ponder how you can make deep learning work for you and/or run away crying because you've totally had it up to here with terms that end in "Net".
+Anyway, if you are like me, and determined to jump into the deep end without a PhD advisor in sight to hold your hand: enjoy! You will be saved years of [grad student descent](https://deepjargon.com/grad-student-descent) and instead are free to ponder how you can make deep learning work for you and/or run away crying because you've totally had it up to here with terms that end in "Net" and you actually need 5 GPUs and a team of 10 to accomplish anything useful whatsoever.
 
 Please do add corrections as pull requests!
 
