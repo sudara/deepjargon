@@ -10,7 +10,7 @@ Although "naming things" is purported to be one of the [2 hard things in compute
 
 So apparently naming things is like totes easy now. Aaaaand oh look! We are drowning in a sea of complex, sophisticated sounding pieces of jargon that are often fairly straightforward modifications to a few basic recipes.
 
-Ironically, this can make Deep Learning more difficult to actually... learn. You know, as a human. Additionally, a community filled with state-of-the-art jargon can artificially inflate the gap between the [in and the outgroups](https://en.wikipedia.org/wiki/Ingroups_and_outgroups), raising the perceived bar higher to be a part of the cool kids club.
+Ironically, this can make Deep Learning more difficult to actually... learn. You know, as a human. Additionally, a community filled with state-of-the-art jargon can artificially inflate the gap between the [in and the outgroups](https://en.wikipedia.org/wiki/Ingroups_and_outgroups), raising the perceived bar  to be a part of the cool kids club.
 
 Rest assured: This stuff is basically like bread baking, right? It's totally a straightforward science, kind-of-sort-of. Ok, but we can say this for sure: it takes a good amount of practice to do it well. There are a shit-ton of variations of bread from all sorts of countries with all sorts of complicated names. Some bread has eggs, other breads have leaveners of different varieties, others have specific seed mixtures on top or specific ways they need to be slashed.
 
