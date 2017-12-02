@@ -1,4 +1,4 @@
-## [Lambda ](#lamda)
+## [Lambda](#lambda)
 
 Used to represent the parameter for [Regularization](#regularization):
 

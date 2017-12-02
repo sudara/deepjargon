@@ -1,6 +1,9 @@
 ## [Convolutional Neural Network (CNN)](#CNN)
 *ConvNet*
 
-A normal [neural network](#neural-network) with one or more [hidden layers](#hidden-layers) that process, twist and contort the incoming image to do things edge and feature detection.
+A [neural network](#neural-network) with one or more [convolutional layers](#convolutional-layers).
 
 The magic that makes [computer vision](#computer-vision) go vroom.
+
+---
+Read [Convolutional Neural Networks](http://cs231n.github.io/convolutional-networks/) on cs231n.
