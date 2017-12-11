@@ -1,7 +1,7 @@
 ## [Filter](#filter)
 *Kernel*
 
-What you need to make your photos look good.
+Can't insta without em.
 
 A small (3x3) matrix that is used to [convolve](#convolve) the input (often an image).
 
