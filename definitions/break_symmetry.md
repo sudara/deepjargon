@@ -1,10 +1,9 @@
 ## [Break Symmetry](#break-symmetry)
 
-The [weights](#weight) are no longer identical/similar in value, and therefore have become useful.
+When weights are [initialized](#initialization) to zero, their values don't differ from each other and they never do anything useful. 
 
-When weights are [initialized](#initialization) to zero, their values don't differ from each other and they never do anything useful.
+If they are initialized randomly, they each perform differently: symmetry is broken. The [weights](#weight) are no longer identical/similar in value, and therefore have become useful.
 
-If they are initialized randomly, they each perform differently and symmetry is broken.
 
 
 ---

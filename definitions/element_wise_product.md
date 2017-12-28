@@ -1,6 +1,14 @@
 ## [Element-wise Product](#element_wise_product)
 
-Multiply two arrays or matrices of the same size by walking through their elements and multiplying them together.
+Multiplying two arrays or matrices by walking through their elements and multiplying them together.
+
+With [numpy](#numpy):
+
+```
+a = np.random.randn(3, 3)
+b = np.random.randn(3, 1)
+a * b # element-wise multiplication, results in shape 3,3
+```
 
 ---
 
