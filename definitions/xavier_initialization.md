@@ -1,0 +1,2 @@
+## [Xavier Initialization](#xavier-initialization)
+
