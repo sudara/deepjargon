@@ -59,7 +59,10 @@ class SiteController < ApplicationController
   end
 
   def render_response_to_file
-    File.open(File.join(Rails.root,'public/index.html'), "wb+") { |f| f.write(response.body) } unless Rails.env.development?
+    unless Rails.env.development? or params[:cache] == false
+      # This is the Vue SPA we are writing
+      File.open(File.join(Rails.root,'public/index.html'), "wb+") { |f| f.write(response.body) }
+    end
   end
 
   def convert_to_html(markdown)

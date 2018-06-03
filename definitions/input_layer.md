@@ -1,4 +1,4 @@
-## [Input layer](#input_layer)
+## [Input layer](#input-layer)
 
 A layer of [neurons](#neuron) in an [artificial neural network](#artificial_neural_network).
 
